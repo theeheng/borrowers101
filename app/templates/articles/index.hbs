@@ -1,0 +1,16 @@
+<table class="primary">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Notes</th>
+      <th>Borrowed since</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |article|}}
+      {{articles/article-row articleStates=possibleStates article=article save="save"}}
+    {{/each}}
+  </tbody>
+</table>
